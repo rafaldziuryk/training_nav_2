@@ -9,50 +9,50 @@ class PageOne extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Page One'),
+        title: const Text('Page One'),
       ),
       floatingActionButton: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
           ElevatedButton(
             onPressed: () => Navigator.of(context).push(MaterialPageRoute(
-              builder: (context) => PageOne(),
+              builder: (context) => const PageOne(),
             )),
-            child: Text('push : Page One'),
+            child: const Text('push : Page One'),
           ),
           ElevatedButton(
             onPressed: () => Navigator.of(context).pushReplacement(MaterialPageRoute(
-              builder: (context) => PageOne(),
+              builder: (context) => const PageOne(),
             )),
-            child: Text('pushReplacement : Page One'),
+            child: const Text('pushReplacement : Page One'),
           ),
           ElevatedButton(
             onPressed: () => Navigator.of(context).push(MaterialPageRoute(
-              builder: (context) => PageTwo(),
+              builder: (context) => const PageTwo(),
             )),
-            child: Text('push : Page Two'),
+            child: const Text('push : Page Two'),
           ),
           ElevatedButton(
             onPressed: () => Navigator.of(context).pushReplacement(MaterialPageRoute(
-              builder: (context) => PageTwo(),
+              builder: (context) => const PageTwo(),
             )),
-            child: Text('pushReplacement : Page Two'),
+            child: const Text('pushReplacement : Page Two'),
           ),
           ElevatedButton(
             onPressed: () => Navigator.of(context).push(MaterialPageRoute(
-              builder: (context) => PageThree(),
+              builder: (context) => const PageThree(),
             )),
-            child: Text('push : Page Three'),
+            child: const Text('push : Page Three'),
           ),
           ElevatedButton(
             onPressed: () => Navigator.of(context).pushReplacement(MaterialPageRoute(
-              builder: (context) => PageThree(),
+              builder: (context) => const PageThree(),
             )),
-            child: Text('pushReplacement : Page Three'),
+            child: const Text('pushReplacement : Page Three'),
           ),
           ElevatedButton(
             onPressed: () => Navigator.of(context).pop(),
-            child: Text('pop : -'),
+            child: const Text('pop : -'),
           ),
         ],
       ), // This trailing comma makes auto-formatting nicer for build methods.
